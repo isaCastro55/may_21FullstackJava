@@ -1,7 +1,7 @@
 package com.ss.jb.day2;
 
 public class Circle implements Shape{
-    private double rad;
+    private Double rad,area;
 
     public Circle(double x){
 
@@ -10,12 +10,13 @@ public class Circle implements Shape{
 
 
     @Override
-    public double calculateArea() {
-        return (Math.PI*Math.pow(rad,2));
+    public void calculateArea() {
+        area=(Math.PI*Math.pow(rad,2));
     }
 
     @Override
     public void display() {
+        System.out.println("The area of this Circle is: "+area);
 
     }
 }

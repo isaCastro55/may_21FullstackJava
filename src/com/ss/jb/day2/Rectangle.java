@@ -3,7 +3,7 @@ package com.ss.jb.day2;
 public class Rectangle implements Shape{
 
 
-    private double len, wid;
+    private Double len, wid, area;
 
     public Rectangle(double x, double y){
         this.len = x;
@@ -11,12 +11,13 @@ public class Rectangle implements Shape{
     }
 
     @Override
-    public double calculateArea() {
-        return len*wid;
+    public void calculateArea() {
+        area = len*wid;
     }
 
     @Override
     public void display() {
+        System.out.println("The area of this Rectangle is: "+area);
 
     }
 }
