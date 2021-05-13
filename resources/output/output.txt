@@ -1,0 +1,54 @@
+hello
+hello
+hello
+hello
+hello
+
+try (BufferedReader buf = new BufferedReader(new InputStreamReader(System.in))) {
+            String x=buf.readLine();
+            while(x != null){
+                x="\n"+x;
+                byte[] read = x.getBytes();
+                Files.write(Paths.get("resources/output/output.txt"), read, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+                x=buf.readLine();
+            }
+
+
+
+
+try (BufferedReader buf = new BufferedReader(new InputStreamReader(System.in))) {
+            String x=buf.readLine();
+            while(x != null){
+                x="\n"+x;
+                byte[] read = x.getBytes();
+                Files.write(Paths.get("resources/output/output.txt"), read, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+                x=buf.readLine();
+            }
+
+
+
+
+
+
+try (BufferedReader buf = new BufferedReader(new InputStreamReader(System.in))) {
+            String x=buf.readLine();
+            while(x != null){
+                x="\n"+x;
+                byte[] read = x.getBytes();
+                Files.write(Paths.get("resources/output/output.txt"), read, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+                x=buf.readLine();
+            }
+try (BufferedReader buf = new BufferedReader(new InputStreamReader(System.in))) {
+            String x=buf.readLine();
+            while(x != null){
+                x="\n"+x;
+                byte[] read = x.getBytes();
+                Files.write(Paths.get("resources/output/output.txt"), read, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+                x=buf.readLine();
+            }
+hello
+hello sir
+hello
+sb.insert(0, "Zero");
+hi
+hiiii
