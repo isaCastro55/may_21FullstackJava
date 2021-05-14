@@ -1,5 +1,7 @@
-package com.ss.jb.four;
-import org.junit.Test;
+package com.ss.jb.tests;
+import org.testng.annotations.Test;
+import com.ss.jb.four.Line;
+
 
 import static org.junit.Assert.*;
 
