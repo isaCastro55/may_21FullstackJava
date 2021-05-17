@@ -22,6 +22,41 @@ public  class SampleSingleton {
            does not waste resources by locking class
            if instance has already been created
      */
+     /*
+         if (instance == null) {
+            instance = new Singleton();
+         }
+            return instance;
+
+
+          This allows creation of multiple instances
+          of this class if called by more than one thread in parallel
+          (multithreading)
+         */
+
+        /*
+            if we use synchronization:
+
+            synchronized (instance) {
+			Integer testCount = 0;// this is just for test
+			if (instance == null) {
+				instance = new SingletonDemo();
+			}
+		    }
+		    return instance;
+
+		    we can ensure that the class becomes thread safe
+		    but is not very efficient since you need to synchronize
+		    (lock) everytime the method is called, even though
+		    its only needed on first creation
+         */
+
+    /*
+        To solve efficiency problem use double checked locking
+        to lock only a certain section of the code.
+
+        - called double checked since instance==null is checked twice
+     */
     public static SampleSingleton getInstance() {
 
         if (instance == null) {
