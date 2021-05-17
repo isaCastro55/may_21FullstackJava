@@ -39,7 +39,7 @@ public class DateAndTime {
 
 
     public static void main(String [] args){
-        
+
         Scanner scan = new Scanner(System.in);
 
         // example 1: for a given year reports length of each month
