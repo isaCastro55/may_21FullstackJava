@@ -5,18 +5,21 @@ public class ProducerConsumerExample {
     public static void main(String[] args)
 
     {
-
+        // create new producer consumer object
         final ProducerConsumer proCon = new ProducerConsumer();
-        Thread t1 = new Thread(() -> proCon.produceInt());
-        Thread t2 = new Thread(() -> proCon.consumeInt());
+
+        // implements abstract run method from runnable
+        // since only one method can use lambda
+        Runnable t = () ->proCon.produceInt();
+        Runnable tt = () ->proCon.consumeInt();
+
+        // creates new threads using the runnables
+        Thread t1 = new Thread(t);
+        Thread t2 = new Thread(tt);
+
+        // starts the threads
         t1.start();
         t2.start();
-        try {
-            t1.join();
-            t2.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
 
